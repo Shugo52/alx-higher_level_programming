@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-number = str(number)
-lsd = int(number[-1:])
-number = int(number)
+lsd = int(str(number)[-1:])
 if number < 0:
     lsd = lsd * -1
 if lsd > 5:
