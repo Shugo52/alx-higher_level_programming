@@ -4,6 +4,7 @@
 Makes available a Rectangle class for rectangle representation
 """
 
+
 class Rectangle:
     """Creates an instance of a Rectangle.
 
