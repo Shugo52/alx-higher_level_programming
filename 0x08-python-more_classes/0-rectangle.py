@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """The Rectangle module
+
 Makes available a Rectangle class for rectangle representation
 """
 
@@ -8,7 +9,7 @@ class Rectangle:
 
     Args:
         None
-        
+
     Attributes:
         Rectangle Object/Instance
     """
