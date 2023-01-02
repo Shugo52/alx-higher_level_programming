@@ -1,5 +1,3 @@
-More about classes
-- Class Attributes
-- Instance Attributes
-- Static Methods
-- Class Methods
+More on classes
+- Class and Instance Attributes
+- Static and Class Methods

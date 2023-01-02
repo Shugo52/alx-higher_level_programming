@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """The Rectangle module
 
-Makes a Rectangle class
+Makes available a Rectangle class for rectangle representation
 """
 
 
