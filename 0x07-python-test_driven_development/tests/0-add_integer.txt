@@ -1,0 +1,44 @@
+Doctest for add_integer module
+
+import ''add_integer'' from ''0-add_integer'' module:
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+Passing two integers as input:
+	>>> print(add_integer(1, 2))
+	3
+
+Passing integer and negative integer as input:
+	>>> print(add_integer(100, -2))
+	98
+
+Passing single integer as input:
+	>>> print(add_integer(2))
+	100
+
+Passing floating point number and integer as input:
+	>>> print(add_integer(100.3, -2))
+	98
+
+Error handling, passing integer and string:
+	>>> print(add_integer(4, "School"))
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+Error handling, passing None as input:
+	>>> print(add_integer(None))
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Error handling, passing an integer as a string as input:
+	>>> print(add_integer(2, "3"))
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+Error handling, passing empty arguments:
+	>>> print(add_integer())
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
