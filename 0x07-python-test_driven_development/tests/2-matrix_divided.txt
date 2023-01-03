@@ -1,0 +1,40 @@
+Doctest document for the add_integer module.
+
+Import the matrix_divided function from the module:
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+    >>> matrix_with_string = [[1, "2", 3], [4, 5, 6]]
+    >>> matrix_with_invalid_row_size = [[1, 2, 3, 4], [4, 5, 6]]
+    >>> matrix_empty = [[], []]
+
+Inputs:
+
+    >>> matrix_divided(matrix, 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+    >>> matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    >>> matrix_divided(matrix_with_string, 3)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix_divided(matrix_with_invalid_row_size, 3)
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+    >>> matrix_divided(matrix, 3.3)
+    [[0.3, 0.61, 0.91], [1.21, 1.52, 1.82]]
+
+    >>> matrix_divided(matrix, "string")
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix_divided(matrix_empty, 3)
+    [[], []]
+
+    >>> matrix_divided("not a list", 3)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
