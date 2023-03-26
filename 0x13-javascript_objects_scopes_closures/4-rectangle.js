@@ -6,17 +6,17 @@ class Rectangle {
       this.height = h;
     }
   }
-  
+
   print () {
     let i = 0;
     while (i < this.height) {
-        console.log('X'.repeat(this.width));
-        i++;
-      }
+      console.log('X'.repeat(this.width));
+      i++;
+    }
   }
 
   rotate () {
-    let tmp = this.width;
+    const tmp = this.width;
     this.width = this.height;
     this.height = tmp;
   }
