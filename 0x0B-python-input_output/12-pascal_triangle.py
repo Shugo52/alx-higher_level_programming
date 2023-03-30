@@ -8,7 +8,7 @@ def pascal_triangle(n):
     Returns:
         Pascal triangle
     """
-    if n == 0:
+    if n <= 0:
         return []
 
     my_list = []
