@@ -1,5 +1,13 @@
 #!/usr/bin/python3
 def pascal_triangle(n):
+    """ Defines a function for the representation of pascal Triangle
+
+    Args:
+        n = size of triangle
+
+    Returns:
+        Pascal triangle
+    """
     if n == 0:
         return []
 
