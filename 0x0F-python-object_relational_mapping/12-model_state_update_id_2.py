@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Change the naem of a state with id=2"""
+""" Change the name of a state with id=2"""
 
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
