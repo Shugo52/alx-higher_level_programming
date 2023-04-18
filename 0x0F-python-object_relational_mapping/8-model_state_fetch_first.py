@@ -24,4 +24,4 @@ if __name__ == "__main__":
     if state:
         print(state.id, state.name, sep=': ')
     else:
-        print()
+        print("Nothing")
