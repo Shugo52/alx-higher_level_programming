@@ -12,9 +12,8 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     # execute query
-    cur.execute("""SELECT * FROM states WHERE name
-                 LIKE BINARY '{}' ORDER BY states.id"""
-                .format(sys.argv[4]))
+    cur.execute("SELECT * FROM states WHERE name LIKE\
+                BINARY '{}' ORDER BY states.id".format(sys.argv[4]))
 
     # obtain query results
     items = cur.fetchall()
