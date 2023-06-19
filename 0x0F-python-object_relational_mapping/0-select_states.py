@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     # execute query
     cur.execute("SELECT * FROM states")
-    
+
     # obtain query results
     items = cur.fetchall()
 
