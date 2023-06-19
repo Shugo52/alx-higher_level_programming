@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""my filter states module"""
 
 import sys
 import MySQLdb
