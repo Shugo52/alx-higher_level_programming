@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     # execute query
     cur.execute("""SELECT * FROM states WHERE name
-                 LIKE BINARY 'N%' ORDER BY state.id""")
+                 LIKE BINARY 'N%' ORDER BY states.id""")
 
     # obtain query results
     items = cur.fetchall()
